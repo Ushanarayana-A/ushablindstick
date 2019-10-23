@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+          <a href="introduction.html">INTRODUCTION</a>
+          <a href="explanation.html">COMPONENTS</a>
+          <a href="software.html">SOFTWARE REQUIREMENT</a>
+          <a href="working.html">WORKING PRINCIPLE</a>
+          <a href="conclusion.html">CONCLUSION</a>
+        </div>
+
+         <h3>EXPLANATIONS OF COMPONENTS</h3>  <p> This system the ultrasonic sensors are used to sense the obstacle (if there is any). The sensors are set a threshold limit if any obstacle is found within that range  it gives beep speech through speaker. Obstacles found in different directions are indicated with different pattern beep and speech (Top, Middle, Pit and Water) to identify them easily. The ultrasonic sensors emit sound scopes with frequency lying in ultrasonic spectrum (>20kHz), which is inaudible to human ears. The sound waves hits the obstacle and bounces back to detectors. The ultrasonic sensor is used for detecting objects/obstacles which are in front whereas the two IR sensors are used to detect the obstacles on the sides. After the collection of data the calculations are done according to the formula: uS / 58 = centimeters or uS / 148 =inch. Once the distance of the obstacle is calculated then the conditions are checked. The signal is then send to microcontroller to operate a buzzer. The microcontroller reads the distance of the obstacle using sensor and also commands the buzzer. The buzzer beeps once for left side obstacle, twice for front obstacles and thrice for right obstacles. The vibrator is also connected in parallel with the buzzer for vibration sensation. The light sensor is gives a feedback about the Environment. That is it informs the user if it's day or night or if a particular place is dark or bright. The moisture sensor is used to detect water pits or any puddles if present. All these signals are then sent to the microcontroller which in turn sends signal to the buzzer thereby alerting the user.
+          </p>
+<h4>ARDUINO NANO </h4>
+  <img class=stick1 src="images/10.jpg" width=50% height="500px">
+         <p>Arduino can control the environment by receiving input signals (Digital/Analog) and can effects its surroundings by controlling lights, relays and other devices. The microcontroller on the board is programmed using Arduino software.</p>
+ </p>
+ <h4>ULTRASONIC SENSOR Generating<h4>
+     <img class=stick2 src="images/9.jpg" width=50% height="500px" >
+        <p>Detecting & processing ultrasonic signals Ultrasonic is the production of sound waves above the frequency of human hearing and can be used in a variety of applications such as, sonic rulers, proximity detectors, movement detectors, liquid level measurement. Ultrasonic Ranging Module HC - SR04 audible waves. Buzzer is used in this research to warn the blind person against obstacle by generating sound proportional to distance from obstacle.</P>
+  <h4>GSM/GPS 800L</h4>
+   <img class=stick2 src="images/11.jpg" width=50% height="500px" >
+<p>When GSM modem receive a message the microcontroller
+will process the message with the keyword saved in it. Then, it
+will get the location of the stick from the GPS modem and
+transmit the location to the GSM modem in order to respond
+to the sender. In case of an emergency, the user of the stick
+can press the emergency button the microcontroller access the
+location from the GPS modem and transmit the location to the
+GSM modem which will send a SMS messages to the all
+saved numbers in the microcontroller.</p>
+<h4>BUZZER</h4>
+<img class=stick2 src="images/8.jpg" width=50% height="500px" ><p>
+A transducer (converts electrical energy into mechanical
+energy) that typically operates A buzzer is in the lower portion
+of the audible frequency range of 20 Hz to 20 kHz. This is
+accomplished by converting an electric, oscillating signal in
+the audible range, into mechanical energy, in the form of audible waves. Buzzer is used in this research to warn the
+blind person against obstacle by generating sound proportional
+to distance from obstacle.
+</p>
+<h4>VIBRATION MOTOR</h4>
+ <img class=stick2 src="images/7.jpg" width=50% height="500px" >
+ <p>A vibrator motor is included to enhance the overall feedback
+for the person who receives the warning against obstacles
+closeness in different formats of vibrations</p>
+  </body>
+</html>
